@@ -52,6 +52,8 @@ export default class Table extends React.Component {
 
   setFilter = (filter) => this.setState({filter})
 
+  deleteDone = () => this.setTodos(this.undone)
+
   render() {
     const {todos, filter} = this.state
 
@@ -96,7 +98,7 @@ export default class Table extends React.Component {
             onDeleteAll={
               todos.length === undone.length
                 ? null
-                : () => this.setTodos(undone)
+                : this.deleteDone
             }
           />
         )}
