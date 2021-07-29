@@ -1,2 +1,6 @@
 # todo-courses
-Created with CodeSandbox
+
+```bash
+npm i
+npm start
+```
