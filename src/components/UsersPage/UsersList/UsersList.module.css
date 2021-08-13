@@ -1,0 +1,42 @@
+.list__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list__container li {
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+.list__item {
+  width: 100px;
+  margin: 20px;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list__item a {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.list__item a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.user__photo {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 3px 3px 11px 0px rgba(80, 55, 126, 0.9);
+  object-fit: cover;
+  object-position: top center;
+}

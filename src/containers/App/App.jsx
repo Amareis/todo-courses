@@ -1,29 +1,34 @@
-import { React } from 'react'
-import { AppContext, useStore } from '../../stores/Store'
-import { Header } from '../../components/Header/Header'
-import { Favorites } from '../../components/Favorites/Favorites'
-import { SearchPanel } from '../../components/SearchPanel/SearchPanel'
-import { Card } from '../../components/Card/Card'
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import S from './App.module.css'
+import Header from '@components/Header'
 
+import routesConfig from '@routes/routesConfig'
 
-function App() {
-  const store = useStore()
-  
-  return (
-    <AppContext.Provider value={store}>
-      <div className={S.wrapper}>
-        <Header />
+import styles from './App.module.css'
+
+const App = () => {
+
+  return(
+    <>
+      <div className={styles.wrapper}>
+        <BrowserRouter>
+          <Header />
+
+          <Switch>
+            {routesConfig.map((route, index) => (
+                <Route
+                  key={index}
+                  path={route.path}
+                  exact={route.exact}
+                  component={route.component}
+                />
+            ))}
+          </Switch>
+
+        </BrowserRouter>
       </div>
-      <div className={S.wrapper}>
-        <main className={S.main}>
-          <Favorites />
-          <SearchPanel />
-          <Card />
-        </main>
-      </div>
-    </AppContext.Provider>
+    </>
   )
 }
 

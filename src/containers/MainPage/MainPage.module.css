@@ -1,0 +1,8 @@
+.header__text {
+  line-height: 1.7;
+  font-size: 28px;
+  text-shadow: 0 0 2px #000;
+  color: blue;
+  transition: color .4s;
+  text-align: center;
+}
