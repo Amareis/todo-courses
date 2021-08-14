@@ -1,4 +1,5 @@
 .wrapper {
+<<<<<<< HEAD
   max-width: 900px;
   margin: 0 auto;
   padding: 35px 0;
@@ -8,4 +9,29 @@
   .wrapper {
     padding: 15px 5px;
   }
+=======
+  /* display: flex; */
+  min-height: 100%;
+  width: 100%;
+  
+  /* max-width: 1140px; */
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: auto auto 100%;
+  justify-content: stretch;
+  /* height: 80vh; */
+  /* align-items: flex-start; */
+  /* width: 100%; */
+  /* border: 1px solid red; */
+  /* max-width: 1140px; */
+  margin: 0 auto;
+  padding: 25px;
+  max-height: 85vh;
+>>>>>>> main
 }

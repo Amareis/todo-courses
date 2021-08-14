@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   display: flex;
   align-items: center;
@@ -28,6 +29,67 @@
   transition: .4s;
   cursor: pointer;
 }
+=======
+.header {
+    /* display: inline-flex; */
+    /* flex-wrap: wrap; */
+    min-width: auto;
+    background-color: blueviolet;
+    height: 60px;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    
+  }
+  
+  .header-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .header-navbar a {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .header-navbar a:hover {
+    text-decoration: underline;
+    color: rgb(53, 53, 53);
+  }
+  
+  .navbar-brand {
+    max-width: 20%;
+    align-self: center;
+    text-align: center;
+  }
+  
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+  }
+  .hamburger {
+    border: none;
+    background: transparent;
+  }
+  .hamburger__icon{
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+  }
+  .hamburger__icon:hover {
+    cursor: pointer;
+    fill: white;
+  }
+>>>>>>> main
 
 .list__container :global(a.active) {
   border: 2px solid blue;
