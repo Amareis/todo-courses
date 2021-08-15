@@ -7,15 +7,12 @@ const UsersList = ({ users }) => {
   return (
     <>
       <ul className={styles.list__container}>
-        {users.map(({ id, avatar_url, html_url, login }) =>
-          <li
-          key={login}
-          className={styles.list__item}
-          >{id}
+        {users.map(({ id, avatar_url, login }) =>
+          <li key={login} className={styles.list__item}>{id}
             <Link to={`/users/${id}`}>
               {login}
             </Link>
-            <a href={html_url}><img src={avatar_url} alt={login} className={styles.user__photo}/></a>
+            <img src={avatar_url} alt={login} className={styles.user__photo}/>
           </li>
         )}
       </ul>    

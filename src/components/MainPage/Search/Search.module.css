@@ -1,9 +1,32 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.search__wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 32%; 
+  margin: 0px; 
+  padding: 0px;
+}
+
+.search__title {
+  margin: 0;
+  padding: 0
+}
+
 .search__form {
-  width: 100%;
+  margin-top: 25px;
   font-size: 26px;
-	padding: 6px 0 4px 10px;
-	border: 1px solid #cecece;
-	background: #F6F6f6;
-	border-radius: 8px;
+}
+
+input[type=text] {
+  border: 0;
+  border-bottom:1px solid #eee;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 10px;
+  width: 100%;
+  padding: 6px 0 4px 10px;
   outline: none;
 }

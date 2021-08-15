@@ -1,0 +1,11 @@
+.result__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 32%; 
+  margin: 0px; 
+  padding: 0px;
+}
+
+.result__title {
+  margin: 0;
+}

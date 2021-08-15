@@ -1,3 +1,13 @@
+.container {
+  display: flex; 
+  height: calc(2/4*100vw); 
+  flex-wrap: nowrap; 
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid blue;
+  border-radius: 3px;
+}
+
 .header__text {
   line-height: 1.7;
   font-size: 28px;
@@ -5,4 +15,5 @@
   color: blue;
   transition: color .4s;
   text-align: center;
+  width: 100%;
 }

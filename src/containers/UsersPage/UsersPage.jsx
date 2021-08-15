@@ -13,8 +13,6 @@ const UsersPage = ({ setErrorApi }) => {
   const getResource = async (url) => {
     const res = await getApiResource(url)
 
-    console.log(res)
-
     if (res) {
       const usersList = res.map(({ avatar_url, followers_url, html_url, id, login, organizations_url, repos_url }) => {
         return {
